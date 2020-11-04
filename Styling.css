@@ -1,0 +1,145 @@
+
+p1
+{
+  font-family: monospace;
+  font-size: 22px;
+}
+h2
+{
+  font-family: inherit;
+}
+p2
+{
+  font-family: monospace;
+  font-size: 17px;
+}
+p3 {
+  font-family: monospace;
+  font-size: 22px;
+}
+  body{
+    background: linear-gradient(to bottom right, red, yellow); 
+
+  }
+
+  @keyframes example {
+      0% {
+          background-color: #EF715B;
+      }
+      20% {
+          background-color: #B7C939;
+      }
+      30% {
+          background-color: #39C990;
+      }
+      40% {
+          background-color: #C53434;
+      }
+      50% {
+          background-color: #FCF500;
+      }
+      60% {
+          background-color: #586BE5;
+      }
+      70% {
+          background-color: #F078D5;
+      }
+      80% {
+          background-color: #F9977A;
+      }
+      90% {
+          background-color: yellow;
+      }
+
+#KendrickLD
+  }
+    Header{
+      
+      background: linear-gradient(to right, red, yellow); 
+
+    }
+    #WuTangD, #FrankOD, #KanyeWD, #KendrickLD, #LogicD{
+      padding: 5px;
+      text-align: center;
+      background: linear-gradient(to right, red, yellow);
+      opacity: 1;
+      border: 0px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    }
+    
+    #DiscographyFO {
+      padding: 50px;
+      display: none;
+    }
+
+    #DiscographyWU {
+      padding: 50px;
+      display: none;
+    }
+    
+    #DiscographyKW {
+      padding: 50px;
+      display: none;
+    }
+
+    #DiscographyKL {
+      padding: 50px;
+      
+    }
+
+    #DiscographyL {
+      padding: 50px;
+      display: none;
+    }
+    
+    
+
+    #Lounge{
+      animation-duration: 4s;
+      animation-name: example2;
+
+    }
+
+    #myCanvas {
+      height: 200px;
+      width: 100%;
+    }
+    #myCanvas {
+      height: 300px;
+      width: 100%;
+    }
+
+    @keyframes example2 {
+      0% {
+          background-color: #EF715B;
+      }
+      20% {
+          background-color: #E34B16;
+      }
+      30% {
+          background-color: #D44513;
+      }
+      40% {
+          background-color: #D1653F;
+      }
+      50% {
+          background-color: #F7CB60;
+      }
+      60% {
+          background-color: #E4DE1F;
+      }
+      70% {
+          background-color: #F0EA1A;
+      }
+      80% {
+          background-color: #D7EA1F;
+      }
+      90% {
+          background-color: #9BE119;
+      }
+
+
+
+  
+  
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+			<div>
+				<style>
+					#myCanvas {
+      height: 300px;
+      width: 100%;
+    }</style>
+					<canvas id="myCanvas">
+							<script>
+								function doFirst() {
+								var x = document.getElementById('myCanvas');
+									canvas = x.getContext('2d');
+									var g = canvas.createLinearGradient(0, 0, 100, 100);
+									g.addColorStop(.0, "#ff9966");
+									g.addColorStop(.1, "#ff5e62");
+									g.addColorStop(.2, "#00F260");
+									g.addColorStop(.5, "#f05053");	
+									g.addColorStop(1, "#e1eec3");
+									canvas.fillStyle = g;
+									canvas.fillRect(0, 0, 100, 100);
+								}
+								window.addEventListener("load", doFirst, false);
+								</script>
+						</canvas></div>
+						<video src = "FrankOceanTribute.mp4"  width = "400" height = "300" controls></video>
+	</body>
+</html>

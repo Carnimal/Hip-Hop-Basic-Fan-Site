@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body dir="ltr" >
+		<link rel="stylesheet" href="Styling.css" type="text/css"/>
+		<font style="font-family:monospace;font-size:22px">
+		On this page you'll come across questions about my favorite artists </br>
+		(P.S you may not find all the answers on this website)
+		<form  name = "Questions" method="post">
+		</br>
+		When was Wu-tang Clan's debut album 'Enter the Wu-Tang (36 Chambers)' first released?
+		</br>
+			<input type="radio" name="Q1" value="1"/> 1991
+		</br>
+			<input type="radio" name="Q1" value="2"/> 1992
+		</br>
+			<input type="radio" name="Q1" id="TRUE1" value="3"/> 1993
+		</br>
+			<input type="radio" name="Q1" value="4"/>1994
+		</br>
+		</br>
+		What was Kendrick Lamar's First studio album called?
+		</br>
+		<input type="radio" name="Q2" value="1"/> To Pimp a Butterfly
+		</br>
+		<input type="radio" name="Q2" id="TRUE2" value="2"/> Section.80
+		</br>
+		<input type="radio" name="Q2" value="3"/> Damn
+		</br>
+		<input type="radio" name="Q2" value="4"/> Good Kid, M.A.A.D City
+		</br>
+		</br>
+		Where was Logic Raised?
+		</br>
+		<input type="radio" name="Q3" id="TRUE3" value="1"/> Rockville,MD
+		</br>
+		<input type="radio" name="Q3" value="2"/> Bronx,NY
+		</br>
+		<input type="radio" name="Q3" value="3"/> Atlanta,GA
+		</br>
+		<input type="radio" name="Q3" value="4"/> Los Angeles,CA
+
+
+		<script language="javascript" type="text/javascript">
+		var Answers = new  array()
+		var x = 0;
+		answers[0] = document.Questions.Q1[2];
+		answers[1] = document.Questions.Q2[1];
+		answers[2] = document.Questions.Q3[0];
+
+
+
+		function Correct()
+		{
+			if (document.Questions.Q1[2].checked == true)
+			{
+				alert("Q1 Correct Answer");
+			} else alert("Q1 Wrong Answer");
+			if(document.Questions.Q2[1].checked == true)
+			{
+				alert("Q2 Correct Answer");
+			}	else {
+				alert("Q2 Wrong Answer");
+				x++;
+			}
+			if(document.Questions.Q2[1].checked == true)
+			{
+				alert("Q3 Correct Answer");
+			} else alert("Q3 Wrong Answer");
+		}
+
+		function clickCounter() {
+  			if (typeof(Storage) !== "undefined") {
+    		if (localStorage.clickcount) {
+      			localStorage.clickcount = Number(localStorage.clickcount)+1;
+    			} else {
+      				localStorage.clickcount = 1;
+    			}
+    				document.getElementById("WA").innerHTML = "You made " + localStorage.clickcount + " Mistakes";
+  				} else {
+   					 document.getElementById("WA").innerHTML = "Sorry, your browser does not support web storage...";
+ 				}
+		}
+		</script>
+	</br>
+		<input type="Submit" value="Submit" onclick="Correct()" onclick = "clickCounter()"/>
+		<button onclick="clickCounter()" type="button">Click</button>
+		<div id = "WA">
+			<p>Click the button to save how many times you made mistakes.</p>
+		</div>
+	</body>
+</html>
